@@ -1,0 +1,27 @@
+body{
+   background-color: black;
+}
+div{
+    color:white;
+}
+h1,h2,h3,h4{
+    text-align:center;
+}
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+#input-city{
+    width:80vh;
+    height:5vh;
+    border:2px solid gray;
+}
+#button-search{
+    width:20vh;
+    height:5vh;
+    border:2px solid gray;
+    color:white;
+    background-color: blue;
+}
+
