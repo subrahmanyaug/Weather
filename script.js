@@ -9,7 +9,7 @@ button.addEventListener("click",async ()=>{
         return;
     }
     try{
-       const weather_response=await fetch(`http://api.weatherapi.com/v1/current.json?key=a2d030a4419048238f8153001241009&q=${val}&aqi=no`);
+       const weather_response=await fetch(`your_api`);
        if(!weather_response.ok)
        {
         throw new Error(weather_response.status)
@@ -33,7 +33,7 @@ button.addEventListener("click",async ()=>{
 })
 button_current.addEventListener("click",async ()=>{
     async function getting(lat,lan){
-       const position= await fetch(`http://api.weatherapi.com/v1/current.json?key=a2d030a4419048238f8153001241009&q=${lat},${lan}&aqi=no`);
+       const position= await fetch(`your_api`);
        const report=await position.json();
        display.innerHTML=`<h1>Location - ${report.location.name}</h1><hr/>
        <h2>Region - ${report.location.region}</h2>
